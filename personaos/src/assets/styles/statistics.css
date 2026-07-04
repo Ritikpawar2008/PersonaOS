@@ -1,0 +1,124 @@
+.analytics-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.analytics-metric-card {
+  background: #FFFFFF;
+  border: 1px solid #E6DED3;
+  border-radius: 20px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.metric-icon-box {
+  width: 48px;
+  height: 48px;
+  background: #F7F5F2;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: #171717;
+}
+
+.metric-content span {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #6B7280;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.metric-content h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  letter-spacing: -0.02em;
+}
+
+.positive-trend {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #00D1B2;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.charts-mock-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+}
+
+.chart-wrapper-box {
+  background: #FFFFFF;
+  border: 1px solid #E6DED3;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.chart-wrapper-box h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.bar-chart-mock {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 200px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #E6DED3;
+}
+
+.bar {
+  width: 40px;
+  background: linear-gradient(to top, #7B61FF, #FF4D6D);
+  border-radius: 6px 6px 0 0;
+  position: relative;
+}
+
+.bar::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.75rem;
+  color: #6B7280;
+  font-weight: 500;
+}
+
+.pie-chart-mock-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pie-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #171717;
+}
+
+.color-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 4px;
+}
+
+.color-indicator.tech { background: #7B61FF; }
+.color-indicator.finance { background: #FF4D6D; }
+.color-indicator.design { background: #FF7A18; }
+.color-indicator.other { background: #00D1B2; }

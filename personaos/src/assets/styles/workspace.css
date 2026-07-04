@@ -1,0 +1,124 @@
+.workspace-page {
+  max-width: 100% !important;
+}
+
+.workspace-layout-split {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  background: #FFFFFF;
+  border: 1px solid #E6DED3;
+  border-radius: 24px;
+  height: calc(100vh - 120px);
+  overflow: hidden;
+}
+
+.workspace-left-sidebar-panel {
+  border-right: 1px solid #E6DED3;
+  background: #F7F5F2;
+  padding: 24px;
+}
+
+.panel-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.panel-title-row h4 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #6B7280;
+  letter-spacing: 0.05em;
+}
+
+.document-vault-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.vault-doc-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.vault-doc-item:hover {
+  background: rgba(0,0,0,0.03);
+}
+
+.doc-icon-static {
+  color: #6B7280;
+  margin-top: 2px;
+}
+
+.doc-meta h5 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+  color: #171717;
+}
+
+.doc-meta span {
+  font-size: 0.75rem;
+  color: #9CA3AF;
+}
+
+.workspace-right-editor-panel {
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+}
+
+.editor-controls-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 30px;
+  border-bottom: 1px solid #E6DED3;
+}
+
+.current-active-persona-indicator {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #7B61FF;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.workspace-action-btn {
+  background: #F7F5F2;
+  border: 1px solid #E6DED3;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.premium-editable-viewport {
+  flex-grow: 1;
+  padding: 60px 80px;
+  overflow-y: auto;
+}
+
+.editable-h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.editable-body-p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #6B7280;
+  outline: none;
+}

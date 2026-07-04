@@ -1,0 +1,87 @@
+.library-top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.library-cards-grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.library-premium-card {
+  background: #FFFFFF;
+  border: 1px solid #E6DED3;
+  border-radius: 20px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 180px;
+}
+
+.card-top-identity {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.library-card-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+.card-top-identity h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #171717;
+  margin-bottom: 2px;
+}
+
+.version-pill-tag {
+  background: #F7F5F2;
+  border: 1px solid #E6DED3;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #6B7280;
+}
+
+.card-bottom-status-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #F7F5F2;
+  padding-top: 16px;
+}
+
+.status-label-indicator {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #6B7280;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.library-card-action-trigger {
+  background: #171717;
+  color: #FFFFFF;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}

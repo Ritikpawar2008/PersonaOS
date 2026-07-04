@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #F7F5F2;
+  color: #171717;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 40px 50px;       /* Spacing standard aur immersive rakhi hai */
+  margin-left: 280px;       /* Floating sidebar ke clear boundary frame ke liye */
+  width: calc(100% - 280px);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-wrapper {
+  width: 100%;
+  max-width: 100%;          /* Max-width constraint ko completely hata diya */
+  margin: 0;                /* Left align bypass constraint */
+  display: flex;
+  flex-direction: column;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: #171717;
+  margin-bottom: 8px;
+}
+
+.page-subtitle {
+  font-size: 1.1rem;
+  color: #6B7280;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #FF7A18 0%, #FF4D6D 50%, #7B61FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Base Inputs & Buttons */
+.btn-primary-gradient {
+  background: linear-gradient(135deg, #FF7A18 0%, #FF4D6D 50%, #7B61FF 100%);
+  color: #FFFFFF;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-primary-gradient:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+.btn-secondary-outline {
+  background: #FFFFFF;
+  border: 1px solid #E6DED3;
+  color: #171717;
+  padding: 14px 28px;
+  border-radius: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-secondary-outline:hover {
+  background: #F7F5F2;
+  border-color: #6B7280;
+}
+
+.search-bar-inline {
+  display: flex;
+  align-items: center;
+  background: #FFFFFF;
+  border: 1px solid #E6DED3;
+  padding: 10px 16px;
+  border-radius: 14px;
+  gap: 10px;
+  width: 320px;
+}
+
+.search-bar-inline input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 0.95rem;
+  color: #171717;
+}
+
+.action-icon-only-btn {
+  background: #FFFFFF;
+  border: 1px solid #E6DED3;
+  padding: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #171717;
+  transition: all 0.2s ease;
+}
+
+.action-icon-only-btn:hover {
+  background: #171717;
+  color: #FFFFFF;
+}
+
+@media (max-width: 1024px) {
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+    padding: 30px 20px;
+  }
+}
